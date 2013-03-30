@@ -2,17 +2,38 @@
 
 columns = 12
 
-labels = ['large', 'small']
+sizes = ['large', 'small']
 
-# generate code for each label
-for label in labels:
+######################################
+# block grid code
+
+# generate code for each size
+for size in sizes:
     for i in range(1,columns+1):
-        print '"d:' + label[0] + str(i) + '" : "<div class=\\"' + label + "-" + str(i) + ' columns\\">",'
+        print '"d:' + size[0] + str(i) + '" : "<div class=\\"' + size + "-" + str(i) + ' columns\\">",'
     print # new line
     
 print # new line
 
-# generate code for double label
+# generate code for double size
 for i in range(1,columns+1):
     for j in range(1,columns+1):
-            print '"d:' + labels[0][0] + str(i) + labels[1][0] + str(j) + '" : "<div class=\\"' + labels[0] + "-" + str(i) + " " + labels[1] + "-" + str(j) + ' columns\\">",'
+            print '"d:' + sizes[0][0] + str(i) + sizes[1][0] + str(j) + '" : "<div class=\\"' + sizes[0] + "-" + str(i) + " " + sizes[1] + "-" + str(j) + ' columns\\">",'
+
+print # new line
+
+######################################
+# block grid code
+
+# generate code for each size
+for size in sizes:
+    for i in range(1,columns+1):
+        print '"u:' + size[0] + str(i) + '" : "<ul class=\\"' + size + "-block-grid-" + str(i) + '\\">",'
+    print # new line
+    
+print # new line
+
+# generate code for double size
+for i in range(1,columns+1):
+    for j in range(1,columns+1):
+            print '"u:' + sizes[0][0] + str(i) + sizes[1][0] + str(j) + '" : "<ul class=\\"' + sizes[0] + "-block-grid-" + str(i) + " " + sizes[1] + "-block-grid-" + str(j) + '\\">",'
