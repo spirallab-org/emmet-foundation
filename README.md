@@ -50,7 +50,7 @@ d:r>d:s2c
 	<div class="small-2 small-centered columns"></div>
 </div>  
 ```
-#### Large Columns
+#### Large Columns Centered
 d:r>d:l4c
 &rarr;
 ```html
