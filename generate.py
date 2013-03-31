@@ -2,7 +2,7 @@
 
 columns = 12
 
-sizes = ['large', 'small']
+sizes = ['small', 'large']
 
 ######################################
 # block grid code

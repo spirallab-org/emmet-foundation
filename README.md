@@ -16,15 +16,6 @@ d:r
 ```html
 <div class="row"></div>
 ```
-
-#### Large Columns
-d:r>d:l4
-&rarr;
-```html
-<div class="row">
-	<div class="large-4 columns"></div>
-</div>  
-```
 #### Small Columns
 d:r>d:s2
 &rarr;
@@ -33,38 +24,46 @@ d:r>d:s2
 	<div class="small-2 columns"></div>
 </div>  
 ```
-#### Large and Small Columns
-d:r>d:l4s2
+#### Large Columns
+d:r>d:l4
 &rarr;
 ```html
 <div class="row">
-	<div class="large-4 small-2 columns"></div>
+	<div class="large-4 columns"></div>
+</div>  
+```
+#### Small and Large Columns
+d:r>d:s2l4
+&rarr;
+```html
+<div class="row">
+	<div class="small-2 large-4 columns"></div>
 </div> 
 ```
 ### Block Grid
-#### Large Block Grid
-u:l4
-&rarr;
-```html
-<ul class="large-block-grid-4"></ul>
-```
 #### Small Block Grid
 u:s1
 &rarr;
 ```html
 <ul class="small-block-grid-1"></ul>
 ```
-#### Large and Small Block Grid
-u:l4s1
+#### Large Block Grid
+u:l4
 &rarr;
 ```html
-<ul class="large-block-grid-4 small-block-grid-1"></ul> 
+<ul class="large-block-grid-4"></ul>
 ```
-#### Large and Small Block Grid with li
-u:l4s1>li*4
+#### Small and Large Block Grid
+u:s1l4
 &rarr;
 ```html
-<ul class="large-block-grid-4 small-block-grid-1">
+<ul class="small-block-grid-1 large-block-grid-4"></ul> 
+```
+#### Small and Large Block Grid with li
+u:s1l4>li*4
+&rarr;
+```html
+<ul class="small-block-grid-1 large-block-grid-4">
 	<li></li>
 	<li></li>
 	<li></li>
