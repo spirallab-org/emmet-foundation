@@ -3,10 +3,12 @@
 Emmet ( http://emmet.io/ ) extension for Zurb Foundation 4 ( http://foundation.zurb.com/ )
 
 ## Features
-* Grid: large, small and large-small
+* Grid:
+	* Sizes: large, small and large-small
+	* Centered: large, small and large-small
 * Block Grid: large, small and large-small
 
-## How to
+## How to use
 
 ### Grid
 
@@ -38,6 +40,30 @@ d:r>d:s2l4
 ```html
 <div class="row">
 	<div class="small-2 large-4 columns"></div>
+</div> 
+```
+#### Small Columns Centered
+d:r>d:s2c
+&rarr;
+```html
+<div class="row">
+	<div class="small-2 small-centered columns"></div>
+</div>  
+```
+#### Large Columns
+d:r>d:l4c
+&rarr;
+```html
+<div class="row">
+	<div class="large-4 large-centered columns"></div>
+</div>  
+```
+#### Small and Large Columns Centered
+d:r>d:s2cl4c
+&rarr;
+```html
+<div class="row">
+	<div class="small-2 small-centered large-4 large-centered columns"></div>
 </div> 
 ```
 ### Block Grid
