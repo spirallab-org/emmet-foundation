@@ -815,9 +815,8 @@
 			"u:s12l9" : "<ul class=\"small-block-grid-12 large-block-grid-9\">",
 			"u:s12l10" : "<ul class=\"small-block-grid-12 large-block-grid-10\">",
 			"u:s12l11" : "<ul class=\"small-block-grid-12 large-block-grid-11\">",
-			"u:s12l12" : "<ul class=\"small-block-grid-12 large-block-grid-12\">",
+			"u:s12l12" : "<ul class=\"small-block-grid-12 large-block-grid-12\">"
 
-        }, 
-    },
+        } 
+    }
 }
-
